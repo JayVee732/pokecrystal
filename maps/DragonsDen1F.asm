@@ -4,8 +4,12 @@ DragonsDen1F_MapScripts:
 	def_callbacks
 
 DragonsDen1F_MapEvents:
-	db 0, 0 ; filler
+	db 1 ; callbacks
+	callback MAPCALLBACK_NEWMAP, .UnsetClairScene
 
+.UnsetClairScene:
+	setmapscene DRAGONS_DEN_B1F, SCENE_DRAGONSDENB1F_NOTHING
+	return
 	def_warp_events
 	warp_event  3,  5, BLACKTHORN_CITY, 8
 	warp_event  3,  3, DRAGONS_DEN_1F, 4

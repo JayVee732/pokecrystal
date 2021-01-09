@@ -235,6 +235,7 @@ CutDownTreeOrGrass:
 
 CheckOverworldTileArrays:
 	; Input: c contains the tile you're facing
+	; Input: c contains the tile you're facing
 	; Output: Replacement tile in b and effect on wild encounters in c, plus carry set.
 	;         Carry is not set if the facing tile cannot be replaced, or if the tileset
 	;         does not contain a tile you can replace.
@@ -412,9 +413,7 @@ UsedSurfScript:
 
 	special UpdatePlayerSprite
 	special PlayMapMusic
-; step into the water (slow_step DIR, step_end)
 	special SurfStartStep
-	applymovement PLAYER, wMovementBuffer
 	end
 
 .stubbed_fn
