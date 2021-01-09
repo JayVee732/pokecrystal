@@ -2,7 +2,7 @@ TileCollisionTable::
 ; entries correspond to COLL_* constants
 	db LAND_TILE         ; COLL_FLOOR
 	db LAND_TILE         ; COLL_01
-	db LAND_TILE         ; 02
+	db LAND_TILE         ; COLL_PUDDLE
 	db LAND_TILE         ; COLL_03
 	db LAND_TILE         ; COLL_04
 	db LAND_TILE         ; 05
