@@ -12,7 +12,7 @@ ChrisNameMenuHeader:
 MalePlayerNameArray:
 	db "CHRIS@"
 	db "MAT@"
-	db "ALLAN@"
+	db "JAMIE@"
 	db "JON@"
 	db 2 ; displacement
 	db " NAME @" ; title
